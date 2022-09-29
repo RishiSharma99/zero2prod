@@ -1,5 +1,4 @@
-use actix_web::{get, web, App, HttpServer, Responder, HttpResponse};
-
+use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
 
 #[get("/hello/{name}")]
 async fn greet(name: web::Path<String>) -> impl Responder {
@@ -22,5 +21,3 @@ pub async fn run() -> std::io::Result<()> {
     .run()
     .await
 }
-
-

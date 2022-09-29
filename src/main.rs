@@ -4,4 +4,3 @@ use zero2prod::run;
 async fn main() -> std::io::Result<()> {
     run().await
 }
-
